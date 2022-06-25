@@ -5,24 +5,40 @@ body {
     font-family: sans-serif;
 }
 .sidebar {
-    background-color: blue;
+    background-color: #1992d4;
     display: flex;
     flex-direction: column;
     width: 25vw;
     height: 100vh;
     color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.main {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    width: max-content;
+    background-color: white;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: content-box;
+    padding: 20px;
 }
 
 .header-first-row {
     display: flex;
+    justify-content: space-between;
 }
 
 .header-second-row {
     display: flex;
+    
 }
+

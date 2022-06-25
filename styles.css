@@ -1,0 +1,28 @@
+
+body {
+    margin: 0px;
+    display: flex;
+    font-family: sans-serif;
+}
+.sidebar {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.header-first-row {
+    display: flex;
+}
+
+.header-second-row {
+    display: flex;
+}

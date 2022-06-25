@@ -42,3 +42,27 @@ body {
     
 }
 
+.tab, .title {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.icon {
+    filter: invert(100%);
+    transform: scale(0.6);
+}
+
+.dash-icon {
+    transform: scale(1);
+}
+
+.tab a, .title a {
+    text-decoration: none;
+    color: white;
+}
+
+.tabs1, .tabs2 {
+    margin-top: 5vh;
+}
+

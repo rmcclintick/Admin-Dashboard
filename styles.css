@@ -16,7 +16,7 @@ body {
 }
 
 .main {
-    background-color: grey;
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -39,7 +39,8 @@ body {
 
 .header-second-row {
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tab, .title {
@@ -64,5 +65,40 @@ body {
 
 .tabs1, .tabs2 {
     margin-top: 5vh;
+}
+
+.true-main {
+    display:flex;
+    gap: 16px;
+    margin: 32px 16px;
+    height: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 16px;
+    flex: 2;
+}
+
+.cards-right {
+    flex: 1;
+    display: grid;
+    grid-template: 1fr 1fr;
+    gap: 16px;
+}
+
+.announcements, .trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    padding:16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    border-left: 4px orange solid;
+    flex: 1;
 }
 

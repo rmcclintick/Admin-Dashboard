@@ -86,6 +86,10 @@ img {
     border-radius: 16px;
 }
 
+#search:focus {
+    border: gray;
+}
+
 .header-second-row {
     display: flex;
     align-items: center;
@@ -151,13 +155,14 @@ button {
 .cards-right {
     flex: 1;
     display: grid;
-    grid-template: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 16px;
 }
 
 .announcements, .trending {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .card {
@@ -169,7 +174,42 @@ button {
     flex: 1;
 }
 
+.announce-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card-title {
     margin-bottom: 16px;
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.trending-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.announce-content {
+    border-bottom: 1px solid lightgray;
+}
+
+.announce-content:last-child {
+    border-bottom: none;
+}
+
+.announce-headline, .project-title {
+    font-weight: bold;
+}
+
+.card-subtext {
+    color: gray;
 }
 

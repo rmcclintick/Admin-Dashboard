@@ -174,21 +174,19 @@ button {
     flex: 1;
 }
 
-.announce-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card-title {
+    font-weight: bold;
 }
 
 .card-title {
     margin-bottom: 16px;
 }
 
-.trending-card {
+.announce-card, .trending-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
+    border: none;
 }
 
 .trending-content {

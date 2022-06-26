@@ -18,6 +18,27 @@ body {
     padding: 10px;
 }
 
+.second-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.medium {
+    height: 75%;
+    width: auto;
+}
+
+.small {
+    height: 50%;
+    width: auto;
+}
+
 .main {
     background-color: lightgrey;
     display: flex;
@@ -38,12 +59,42 @@ body {
 .header-first-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.small-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+img {
+    flex: 0 0 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    width: 400px;
+    flex: 1;
 }
 
 .header-second-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+button {
+    background-color: #1992d4;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    width: 64px;
+    height: 32px;
 }
 
 .tab, .title {
@@ -55,6 +106,10 @@ body {
 .icon {
     filter: invert(100%);
     transform: scale(0.6);
+}
+
+.search-icon {
+    filter: invert(0%);
 }
 
 .dash-icon {

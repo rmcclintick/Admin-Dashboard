@@ -136,7 +136,7 @@ button {
 .true-main {
     display:flex;
     gap: 16px;
-    margin: 32px 16px;
+    margin: 16px 16px;
     height: 100%;
 }
 
@@ -149,7 +149,7 @@ button {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 16px;
-    height: calc(100% - 16px - 16px);
+    height: calc(100% - 16px - 10px);
 }
 
 .cards-right {
@@ -176,11 +176,25 @@ button {
 
 .card-title {
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.card-title {
-    margin-bottom: 16px;
+.card-content {
+    height: 100%;
+    display: flex;
+    max-width: max-content;
+    justify-content: space-between;   
+    flex-direction: column; 
 }
+
+.card-buttons {
+    margin-left: auto;
+    transform: scale(0.6);
+    transform-origin: right;
+    max-width: fit-content;
+}
+
+
 
 .announce-card, .trending-card {
     display: flex;
@@ -209,5 +223,6 @@ button {
 
 .card-subtext {
     color: gray;
+    flex: 1;
 }
 
